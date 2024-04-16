@@ -4,8 +4,8 @@
 
 1. Rename the `/packages/api/.env.sample` to `.env`
 2. Fill the `.env` required variables (Marked with <>)
-3. Run in the terminal: ```npm install```
-4. Run in the terminal: ```npm run dev```
+3. Run in the terminal: `npm install`
+4. Run in the terminal: `npm run dev`
 
 ## To deploy to AWS
 
@@ -18,7 +18,7 @@ The CI/CD is already configure so you just need to make a commit to this repo in
 - Go to IAM service
 - Click Users --> `Create User`
 
-   ![image info](readme-assets/create-user.png)
+  ![image info](readme-assets/create-user.png)
 
 - Fill the user name and click on `Next`
 - Click `Attach policies directly`, click on `AdministratorAccess` and click on `Next`
@@ -34,7 +34,7 @@ The CI/CD is already configure so you just need to make a commit to this repo in
 - Go to the repository settings
 - Click `Secrets and variables` submenu `Actions`
 - Click `New repository secret`
-- Add a secret with a name `AWS_ACCESS_KEY` and another with the name `AWS_SECRET_ACCESS_KEY` and paste the AWS secrets respectively.
+- Add a secret with a name `AWS_ACCESS_KEY_ID` and another with the name `AWS_SECRET_ACCESS_KEY` and paste the AWS secrets respectively.
 
 > Environment variables
 
