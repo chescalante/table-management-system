@@ -8,12 +8,14 @@ dotenv.config();
 const env = {
   NODE_ENV: process.env.NODE_ENV,
   PORT: process.env.PORT,
+  DB_URL: process.env.DB_URL,
 };
 
 const envSchema = z
   .object({
     NODE_ENV: z.enum(["development", "production"]).default("development"),
     PORT: z.string().default("5000"),
+    DB_URL: z.string().min(1),
   })
   .required();
 

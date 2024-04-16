@@ -23,7 +23,7 @@ app.use(middlewares.errorHandler);
 
 if (envParsed().NODE_ENV === "development") {
   app.listen(envParsed().PORT, () => {
-    console.log(`App Started at PORT=${envParsed().PORT}`);
+    console.log(`Api Started at http://localhost:${envParsed().PORT}/api`);
   });
 }
 

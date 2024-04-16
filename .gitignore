@@ -15,6 +15,8 @@ dist-ssr
 
 .env*
 !.env.sample
+!/packages/ui/.env
+!/packages/ui/.env.production
 
 # Hardhat files
 /cache

@@ -1,10 +1,10 @@
-import { Request, Response, Router, NextFunction } from "express";
+import { NextFunction, Request, Response, Router } from "express";
 
 const router = Router();
 
 router.get("/", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    res.status(200).send("Hello World from github!");
+    res.status(200).json({ message: "The api is working!" });
   } catch (error) {
     next(error);
   }

@@ -15,7 +15,6 @@ function notFound(req: Request, res: Response, next: NextFunction) {
   next(error);
 }
 
-/* eslint-disable no-unused-vars */
 function errorHandler(err: unknown, req: Request, res: Response) {
   console.error(err);
 

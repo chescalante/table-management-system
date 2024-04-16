@@ -1,12 +1,9 @@
 import { z } from "zod";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 // NOTE: DO NOT destructure process.env
 
 const env = {
-  APP_URL: process.env.APP_URL,
+  APP_URL: import.meta.env.VITE_API_URL,
 };
 
 const envSchema = z
